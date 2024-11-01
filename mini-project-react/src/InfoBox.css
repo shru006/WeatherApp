@@ -1,0 +1,47 @@
+/* .InfoBox{
+    text-align: center;
+}
+.cardContainer{
+    display:flex;
+    justify-content: center;
+} */
+.InfoBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.cardContainer {
+    max-width: 90%;
+    width: 345px;
+    background: rgba(255, 255, 255, 0.15);  /* Glassmorphism */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.cardContainer:hover {
+    transform: scale(1.05);  /* Hover effect */
+}
+
+.cardContent {
+    padding: 20px;
+    color: #333;
+}
+
+.weatherIcon {
+    font-size: 48px;
+    margin-top: 10px;
+    animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
